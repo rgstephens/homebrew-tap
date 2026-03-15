@@ -20,6 +20,7 @@ brew install rgstephens/tap/<name>
 ### Formulae
 
 - `fargo` — Fargo pool handicap tool
+- `ghin` — Golf Handicap Information Network tool
 
 ## Update / Uninstall
 
