@@ -21,6 +21,7 @@ brew install rgstephens/tap/<name>
 
 - `fargo` — Fargo pool handicap tool
 - `ghin` — Golf Handicap Information Network tool
+- `poeusage` - [Poe usage tool](https://github.com/rgstephens/poeusage)
 
 ## Update / Uninstall
 
