@@ -5,21 +5,21 @@
 class Poeusage < Formula
   desc "Monitor your Poe API point balance and usage history"
   homepage "https://github.com/rgstephens/poeusage"
-  version "1.0.3"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rgstephens/poeusage/releases/download/v1.0.3/poeusage_1.0.3_darwin_amd64.tar.gz"
-      sha256 "cb270d6a797777f5525e06b89938e63246184fe34a8e99aeefd5ec2c37cb7648"
+      url "https://github.com/rgstephens/poeusage/releases/download/v1.1.0/poeusage_1.1.0_darwin_amd64.tar.gz"
+      sha256 "a83d6edbd93b8f2b476c1dd04171a7dda52827f53bc8b6f2e83e0a6b2f90ff23"
 
       define_method(:install) do
         bin.install "poeusage"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rgstephens/poeusage/releases/download/v1.0.3/poeusage_1.0.3_darwin_arm64.tar.gz"
-      sha256 "fdf0a59f185d3e1b06b477d54cd39373746e485791872aa0876eb2da705884be"
+      url "https://github.com/rgstephens/poeusage/releases/download/v1.1.0/poeusage_1.1.0_darwin_arm64.tar.gz"
+      sha256 "c36ee17a28debf11d0057eb7adcf0dc533bedc635f5bb6976ce9c887f6f7b399"
 
       define_method(:install) do
         bin.install "poeusage"
@@ -29,15 +29,15 @@ class Poeusage < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rgstephens/poeusage/releases/download/v1.0.3/poeusage_1.0.3_linux_amd64.tar.gz"
-      sha256 "eac5317a30e2de4e0395c4ff017a3277e7fe3eb68def5bb4bd3bd6c24fb1e3f3"
+      url "https://github.com/rgstephens/poeusage/releases/download/v1.1.0/poeusage_1.1.0_linux_amd64.tar.gz"
+      sha256 "1cbc14bf99277d0794617bd9c3d115b691d81d60e8a6adb514f10ef38b72676a"
       define_method(:install) do
         bin.install "poeusage"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rgstephens/poeusage/releases/download/v1.0.3/poeusage_1.0.3_linux_arm64.tar.gz"
-      sha256 "e4526e4f41e3703b332558f1814aac96e5f9f30cdfd4c7f651830c18ad18ef94"
+      url "https://github.com/rgstephens/poeusage/releases/download/v1.1.0/poeusage_1.1.0_linux_arm64.tar.gz"
+      sha256 "5cac3d9b4a81e3dfc4712268b5e64fcbbe4706f91e35440bd3f950d3dd177e80"
       define_method(:install) do
         bin.install "poeusage"
       end
