@@ -5,21 +5,21 @@
 class Fargo < Formula
   desc "FargoRate billiards rating CLI"
   homepage "https://github.com/rgstephens/fargo-skill"
-  version "0.4.0"
+  version "0.4.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rgstephens/fargo-skill/releases/download/v0.4.0/fargo_darwin_amd64.tar.gz"
-      sha256 "53cec9b7d190d5ab90e3447909c6846d29cc42979fb11da6c25a2e5393ddf72e"
+      url "https://github.com/rgstephens/fargo-skill/releases/download/v0.4.1/fargo_darwin_amd64.tar.gz"
+      sha256 "245932795d337a708480e08038732852e14dd035bd3ca186f1381083e59d9e3c"
 
       define_method(:install) do
         bin.install "fargo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rgstephens/fargo-skill/releases/download/v0.4.0/fargo_darwin_arm64.tar.gz"
-      sha256 "1de2cab48760e92f4286ba738f963248cea211986704b5a0cb8d5f6e27e93177"
+      url "https://github.com/rgstephens/fargo-skill/releases/download/v0.4.1/fargo_darwin_arm64.tar.gz"
+      sha256 "aed21462601913670864bb298ee8a36fafaeca2180876cea2bf73529ef448a14"
 
       define_method(:install) do
         bin.install "fargo"
@@ -29,15 +29,15 @@ class Fargo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rgstephens/fargo-skill/releases/download/v0.4.0/fargo_linux_amd64.tar.gz"
-      sha256 "62ab5336c09722dde5a3c936dbfb99c9e635b3f87e87f77f2fee82ee7034df08"
+      url "https://github.com/rgstephens/fargo-skill/releases/download/v0.4.1/fargo_linux_amd64.tar.gz"
+      sha256 "ce3b21d22261169214174d4d59baf35cd2c21c3c371dda57f6bd879526ce37f6"
       define_method(:install) do
         bin.install "fargo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rgstephens/fargo-skill/releases/download/v0.4.0/fargo_linux_arm64.tar.gz"
-      sha256 "0fbe6a4daea29b2f872d69df7bbf11c2c0b307f9320c331ea8d2afd80c215a3d"
+      url "https://github.com/rgstephens/fargo-skill/releases/download/v0.4.1/fargo_linux_arm64.tar.gz"
+      sha256 "20162cec9c41b438d118c0b78b7441a13b99d89b9203d07c1504a3e63de4cdaf"
       define_method(:install) do
         bin.install "fargo"
       end
