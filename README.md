@@ -22,6 +22,7 @@ brew install rgstephens/tap/<name>
 - `fargo` — Fargo pool handicap tool
 - `ghin` — Golf Handicap Information Network tool
 - `poeusage` - [Poe usage tool](https://github.com/rgstephens/poeusage)
+- `simplefin` — [SimpleFIN Bridge CLI and MCP server](https://github.com/rgstephens/simplefin-cli)
 
 ## Update / Uninstall
 
